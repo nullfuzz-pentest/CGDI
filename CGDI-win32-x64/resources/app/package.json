@@ -1,0 +1,23 @@
+{
+  "name": "Calculadora-de-incidentes",
+  "version": "0.0.1",
+  "description": "Calculadora de incidentes",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . CGDI"
+  },
+  "repository": "",
+  "keywords": [
+    "Calculadora"
+  ],
+  "author": "Gabriel D. Hidalgo",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^3.0.7",
+    "electron-package": "^0.1.0"
+  },
+  "dependencies": {
+    "electron-packager": "^12.2.0"
+  }
+}

@@ -1,18 +1,18 @@
 {
-  "name": "Calculadora-de-incidentes",
-  "version": "0.0.1",
-  "description": "Calculadora de incidentes",
+  "name": "CGDI",
+  "version": "0.0.2",
+  "description": "Application to calculate duration between 2 dates (Electron app)",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . CGDI"
+    "build": "electron-packager . CGDi"
   },
   "repository": "",
   "keywords": [
-    "Calculadora"
+    "electron-app", "electron", "calculator", "HTML", "Javascript", "Node.js" , "bootwatch", "CSS"
   ],
   "author": "Gabriel D. Hidalgo",
-  "license": "CC0-1.0",
+  "license": "GNU GPLv3",
   "devDependencies": {
     "electron": "^3.0.7",
     "electron-package": "^0.1.0"

@@ -7,13 +7,16 @@
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 AppId={{1729CFC1-2935-4EC1-8589-D903175D07B1}
 AppName=CGDI
-AppVersion=0.0.1
-;AppVerName=CGDI 0.0.1
+AppVersion=0.0.2
+;AppVerName=CGDI 0.0.2
 DefaultDirName={pf}\CGDI
 DisableProgramGroupPage=yes
 OutputBaseFilename=setup
-Compression=lzma
 SolidCompression=yes
+Compression=lzma2/ultra64
+LZMAUseSeparateProcess=yes
+LZMADictionarySize=1048576
+LZMANumFastBytes=273
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -23,8 +26,8 @@ Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\g_hidalgo\Documents\Calculadora-de-incidentes\CGDI-win32-x64\CGDI.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\g_hidalgo\Documents\Calculadora-de-incidentes\CGDI-win32-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\Proyecto\CGDI\CGDI-win32-x64\CGDI.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Proyecto\CGDI\CGDI-win32-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]

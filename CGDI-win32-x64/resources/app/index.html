@@ -3,26 +3,27 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Calculador de Incidentes v.0.0.1 Rev 52</title>
+  <title>Calculador de Incidentes v.0.0.2</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="js/moment.js" charset="utf-8"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/particles.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 </head>
-<body style="background-color:#323232">
-  <div align="center">
-    <br>
-    <br>
-    <p style="color:#94CEFF">Fecha de incio:</p><input id="date1" style="background-color:#94CEFF; border:0px "  type="date" value="2018-01-01"><input id="time1" style="background-color:#94CEFF; border:0px" type="time" value="00:00"><br><br>
-    <p style="color:#94CEFF">Fecha de solucion:</p><input id="date2" style="background-color:#94CEFF; border:0px"  type="date" value="2018-01-01"><input id="time2" style="background-color:#94CEFF; border:0px" type="time" value="00:00"><br><br>
-    <input type="button" class="btn btn-default" data-toggle="button"   id='calcular' value="Calcular"><br><br>
-    <textarea style="background-color:#94CEFF ;border:0px;border-radius: 7px;" rows="3" cols="50" id='resultado'>
-    </textarea>
+<body>
+<div  id="particles-js">
+  <div class="particles" align="center">
+    <br><br>
+    <p class="pcolor1 h6">Fecha de incio:</p><input id="date1" class="input-format" type="date" value="2018-01-01"><input id="time1" class="input-format" type="time" value="00:00"><br><br>
+    <p class="pcolor1 h6">Fecha de solucion:</p><input id="date2" class="input-format"  type="date" value="2018-01-01"><input id="time2" class="input-format" type="time" value="00:00"><br><br>
+    <input type="button" class="btn btn-default" data-toggle="button"   id="calcular" value="Calcular"><br><br>
+    <textarea class="boxtext1" rows="3" cols="50" id='resultado'>
+    </textarea> 
+      <br><br><br><br>
+      <footer class="page-footer">© 2018 Gabriel D. Hidalgo. <br> El contenido está disponible bajo licencia GNU GPLv3.</footer>
   </div>
-  <div align="center">
-      <br>
-      <br>
-      <footer>© 2018 Gabriel D. Hidalgo. <br> El contenido está disponible bajo licencia GNU GPLv3.</footer>
-  </div>
+</div>
   <script type="text/javascript">
     var date1 = document.getElementById('date1')
     var date2 = document.getElementById('date2')
@@ -43,18 +44,18 @@
       var minutes = parseInt(diff.asMinutes());
       minutes = minutes - (days * 24 * 60 + hours * 60);
       if (days <= 0 && hours > 0) {
-        diferencia.value = ('      Duracion del incidente: ' + hours + " Hs " + minutes + " Min")
+        diferencia.value = ('Duracion del incidente: ' + hours + " Hs " + minutes + " Min")
       } else if (hours <= 0 && days <= 0) {
-        diferencia.value = ('      Duracion del incidente: ' + minutes + " Min")
+        diferencia.value = ('Duracion del incidente: ' + minutes + " Min")
       } else {
-        diferencia.value = ('      Duración del incidente: ' + days + ' Dia ' + hours + " Hs " + minutes + " Min")
+        diferencia.value = ('Duración del incidente: ' + days + ' Dia ' + hours + " Hs " + minutes + " Min")
       }
     }
     // debug console.log(date1.value , date2.value , time1.value , time2.value)
-  </script>
-  <script>
- 
-  </script>
+  </script> 
+  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+  <script src="js/particlesconfig.js"></script>
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

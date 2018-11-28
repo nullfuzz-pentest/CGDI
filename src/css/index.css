@@ -1,0 +1,37 @@
+body{
+    /* Color de Fondo de app  */
+
+    background-color:#323232;
+}
+.input-format{
+    /*Formato de Inputs id="date1"   id="date2"  id="time1" id="time2" */
+
+    background-color:#94CEFF;
+    border:0px; 
+
+}
+.pcolor1{
+    /* Color de Parrafos */
+
+    color:#94CEFF;
+    font-weight: bold;
+
+ 
+}
+.boxtext1{
+
+    /* Formato de text box id='resultado' */
+
+    background-color:#94CEFF ;
+    border:0px;
+    border-radius: 7px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.particles{
+    top:10%;
+    width: 100%;
+    position:absolute;
+    text-align: center;
+}

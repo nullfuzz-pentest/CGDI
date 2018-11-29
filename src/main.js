@@ -14,8 +14,17 @@ function createWindow () {
     title:'CGDI 0.0.2',
     center:true,
     resizable: true,
+    
+    webPreferences: {
+      nodeIntegrationInWorker: true,
+      textAreasAreResizable: false,
+      webgl:true,
+      webaudio:false,
+      preload: '/js/particles.min.js',
+      preload: '/js/particlesconfig.js',
+    }
   })
-
+ 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
 

@@ -7,7 +7,14 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 600, height: 480})
+  mainWindow = new BrowserWindow({
+    width: 600, 
+    height: 480,
+    backgroundColor:'#323232',
+    title:'CGDI 0.0.2',
+    center:true,
+    resizable: true,
+  })
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
@@ -21,7 +28,8 @@ function createWindow () {
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
     mainWindow = null
-  })
+
+  }) 
 }
 
 // This method will be called when Electron has finished

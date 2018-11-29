@@ -14,8 +14,7 @@ function createWindow () {
     title:'CGDI 0.0.2',
     center:true,
     resizable: true,
-    
-    webPreferences: {
+  webPreferences: {
       nodeIntegrationInWorker: true,
       textAreasAreResizable: false,
       webgl:true,
@@ -24,7 +23,6 @@ function createWindow () {
       preload: '/js/particlesconfig.js',
     }
   })
- 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
 
@@ -40,15 +38,10 @@ function createWindow () {
 
   }) 
 }
-
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-// Some APIs can only be used after this event occurs.
 app.on('ready', createWindow)
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
-  // On macOS it is common for applications and their menu bar
   // to stay active until the user quits explicitly with Cmd + Q
   if (process.platform !== 'darwin') {
     app.quit()
@@ -56,7 +49,6 @@ app.on('window-all-closed', function () {
 })
 
 app.on('activate', function () {
-  // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
   if (mainWindow === null) {
     createWindow()

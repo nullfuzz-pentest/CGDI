@@ -11,7 +11,7 @@ function createWindow () {
     width: 600, 
     height: 480,
     backgroundColor:'#323232',
-    title:'CGDI 0.0.2',
+    title:'CGDI 0.0.3',
     center:true,
     resizable: true,
   webPreferences: {

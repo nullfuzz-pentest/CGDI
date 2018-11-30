@@ -1,15 +1,6 @@
 # CGDI
  Application to calculate duration between 2 dates (Electron app)
  
-<b>New Release 0.0.2!</b>
+<b>New Release 0.0.3!</b>
+https://github.com/skymloder1/CGDI/releases
 
-<br> 
-// Syntax errors are solved
-<br> 
-// Trash code was removed
-<br> 
-// index.css added (Remove styles from index.html)
-<br> 
-// Add Particules Effects
-<br> 
-// Corrections in formats

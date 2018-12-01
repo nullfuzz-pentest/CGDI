@@ -16,8 +16,8 @@
       }
     }
     calcular.onclick = function () {
-      var now = (date1.value + " " + time1.value + ":00");
-      var then = (date2.value + " " + time2.value + ":00");
+      var now = (date1.value + ' ' + time1.value + ':00');
+      var then = (date2.value + ' ' + time2.value + ':00');
       var diff = moment.duration(moment(then).diff(moment(now)));
       var days = parseInt(diff.asDays());
       var hours = parseInt(diff.asHours());
@@ -27,11 +27,15 @@
       var validator = negativefix(diff)
       if (validator == false) {
         if (days <= 0 && hours > 0) {
-          diferencia.value = ('Duracion del incidente: ' + hours + " Hs " + minutes + " Min")
+          diferencia.value = ('Duracion del incidente: ' + hours + ' Hs ' + minutes + ' Min')
         } else if (hours <= 0 && days <= 0) {
-          diferencia.value = ('Duracion del incidente: ' + minutes + " Min")
+          diferencia.value = ('Duracion del incidente: ' + minutes + ' Min')
         } else {
-          diferencia.value = ('Duración del incidente: ' + days + ' Dia ' + hours + " Hs " + minutes + " Min")
+          if (days>1){
+            diferencia.value = ('Duración del incidente: ' + days + ' Dias ' + hours + ' Hs ' + minutes + ' Min')
+          } else{
+            diferencia.value = ('Duración del incidente: ' + days + ' Dia ' + hours + ' Hs ' + minutes + ' Min')
+          }
         }
       }
     }

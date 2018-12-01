@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . CGDi  "
+    "build": "electron-packager . CGDi --platform=win32 arch=x64 --overwrite"
   },
   "repository": "",
   "keywords": [

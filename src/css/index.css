@@ -1,46 +1,35 @@
 body {
     /* Color de Fondo de app  */
-
     background-color: #323232;
 }
-
 .input-format {
     /*Formato de Inputs id="date1"   id="date2"  id="time1" id="time2" */
-
     background-color: #8f4c60;
     border: 0px;
-
 }
-
 .pcolor1 {
     /* Color de Parrafos */
-
     color: #A399A7;
     font-weight: bold;
 }
-
 .boxtext1 {
-
     /* Formato de text box id='resultado' */
-
     background-color: #8f4c60;
     border: 0px;
     border-radius: 7px;
     font-weight: bold;
     text-align: center;
     resize: none;
-
 }
-
 .particles {
+    /* Formato Div principal */
     top: 10%;
     width: 100%;
     position: absolute;
     text-align: center;
 }
-
 input[name=BTCalcular] {
+    /* Formato de Boton name=BTCalcular */
     color: #131313;
     font-weight: bold;
-
 }

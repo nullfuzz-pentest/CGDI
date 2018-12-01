@@ -9,12 +9,19 @@
   },
   "repository": "",
   "keywords": [
-    "electron-app", "electron", "calculator", "HTML", "Javascript", "Node.js" , "bootwatch", "CSS"
+    "electron-app",
+    "electron",
+    "calculator",
+    "HTML",
+    "Javascript",
+    "Node.js",
+    "bootwatch",
+    "CSS"
   ],
   "author": "Gabriel D. Hidalgo",
   "license": "GNU GPLv3",
   "devDependencies": {
-    "electron": "^3.0.7",
+    "electron": "^3.0.10",
     "electron-package": "^0.1.0"
   },
   "dependencies": {

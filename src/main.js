@@ -1,5 +1,8 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
+const {
+  app,
+  BrowserWindow
+} = require('electron')
 const url = require('url')
 const path = require('path')
 
@@ -7,20 +10,20 @@ const path = require('path')
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
-function createWindow () {
+function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 500, 
+    width: 500,
     height: 450,
-    backgroundColor:'#323232',
-    title:'CGDI 0.0.4',
-    center:true,
+    backgroundColor: '#323232',
+    title: 'CGDI 0.0.4',
+    center: true,
     resizable: true,
-  webPreferences: {
+    webPreferences: {
       nodeIntegrationInWorker: true,
       textAreasAreResizable: false,
-      webgl:true,
-      webaudio:false,
+      webgl: true,
+      webaudio: false,
       preload: '/js/particles.min.js',
       preload: '/js/particlesconfig.js',
     }
@@ -28,9 +31,9 @@ function createWindow () {
   // and load the index.html of the app.
   //mainWindow.loadFile('index.html')
   mainWindow.loadURL(url.format({
-    pathname:path.join(__dirname,'index.html'),
-    slashes:true,
-    protocol:'File',
+    pathname: path.join(__dirname, 'index.html'),
+    slashes: true,
+    protocol: 'File',
   }))
   // Open the DevTools.
   //mainWindow.webContents.openDevTools()
@@ -38,7 +41,7 @@ function createWindow () {
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
     mainWindow = null
-  }) 
+  })
 }
 app.on('ready', createWindow)
 

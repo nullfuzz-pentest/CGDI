@@ -7,11 +7,11 @@
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 AppId={{1729CFC1-2935-4EC1-8589-D903175D07B1}
 AppName=CGDI
-AppVersion=0.0.2
-;AppVerName=CGDI 0.0.2
+AppVersion=0.0.4
+AppVerName=CGDI 0.0.4
 DefaultDirName={pf}\CGDI
 DisableProgramGroupPage=yes
-OutputBaseFilename=setup
+OutputBaseFilename="CGDI 0.0.4 Setup"
 SolidCompression=yes
 Compression=lzma2/ultra64
 LZMAUseSeparateProcess=yes
@@ -19,7 +19,6 @@ LZMADictionarySize=1048576
 LZMANumFastBytes=273
 
 [Languages]
-Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 
 [Tasks]

@@ -2,11 +2,11 @@
 [Setup]
 AppId={{1729CFC1-2935-4EC1-8589-D903175D07B1}
 AppName=CGDI
-AppVersion=0.0.4
-AppVerName=CGDI 0.0.4
+AppVersion=0.0.5
+AppVerName=CGDI 0.0.5
 DefaultDirName={pf}\CGDI
 DisableProgramGroupPage=yes
-OutputBaseFilename="CGDI 0.0.4 Setup"
+OutputBaseFilename="CGDI 0.0.5 Setup"
 SolidCompression=yes
 Compression=lzma2/ultra64
 LZMAUseSeparateProcess=yes

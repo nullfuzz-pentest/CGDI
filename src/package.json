@@ -21,7 +21,7 @@
   "author": "Gabriel D. Hidalgo",
   "license": "GNU GPLv3",
   "devDependencies": {
-    "electron": "^4.0.0-beta.8",
+    "electron": "^4.0.0-nightly.20181010",
     "electron-package": "^0.1.0"
   },
   "dependencies": {

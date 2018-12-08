@@ -8,7 +8,7 @@ const time1 = document.getElementById(`time1`);
 const time2 = document.getElementById(`time2`);
 const calcular = document.getElementById(`calcular`);
 const diferencia = document.getElementById(`resultado`);
-const msgfooter = document.write(`© ${yearcopyright} ${autor} </br> ${licenseGPL}`);
+const msgfooter = (`© ${yearcopyright} ${autor} ${licenseGPL}`);
 
     
     seteo = moment().format(`YYYY-MM-DD`); // setea fecha y formato YYYY-MM-DD

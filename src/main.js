@@ -16,7 +16,7 @@ function createWindow() {
     width: 500,
     height: 450,
     backgroundColor: '#323232',
-    title: 'CGDI 0.0.4',
+    title: 'CGDI 0.0.5',
     center: true,
     resizable: true,
     webPreferences: {
@@ -28,8 +28,6 @@ function createWindow() {
       preload: '/js/particlesconfig.js',
     }
   })
-  // and load the index.html of the app.
-  //mainWindow.loadFile('index.html')
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
     slashes: true,

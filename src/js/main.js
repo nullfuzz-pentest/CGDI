@@ -14,6 +14,8 @@ const msgfooter = (`© ${yearcopyright} ${autor} ${licenseGPL}`);
     date1.value = (seteo); // setea valor de fecha actual en value del input id date1
     date2.value = (seteo); // setea valor de fecha actual en value del input id date2
     
+    /// Patch fix negative diff in value duration 
+
     function negativefix(x) {
       if (x < 0) {
         let MsgError = `Ingreso una fecha no valida`;
@@ -27,7 +29,6 @@ const msgfooter = (`© ${yearcopyright} ${autor} ${licenseGPL}`);
       var then = (date2.value + ` ` + time2.value + `:00`);
       var viewNow= (date1.value + ` ` + time1.value +` hs`);
       var viewThen= (date2.value + ` ` + time2.value +` hs`);
-
       var diff = moment.duration(moment(then).diff(moment(now)));
       var days = parseInt(diff.asDays());
       var hours = parseInt(diff.asHours());

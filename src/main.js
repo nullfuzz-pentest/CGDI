@@ -14,7 +14,7 @@ function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 500,
-    height: 450,
+    height: 400,
     backgroundColor: '#323232',
     title: 'CGDI 0.0.6',
     center: true,

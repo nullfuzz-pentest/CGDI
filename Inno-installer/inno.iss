@@ -20,8 +20,8 @@ Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "D:\Proyecto\CGDI\CGDI-win32-x64\CGDI.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Proyecto\CGDI\CGDI-win32-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\skymloder\Documents\GitHub\CGDI\src\CGDI-win32-x64\CGDI.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\skymloder\Documents\GitHub\CGDI\src\CGDI-win32-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{commonprograms}\CGDI"; Filename: "{app}\CGDI.exe"

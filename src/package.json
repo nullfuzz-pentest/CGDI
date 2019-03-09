@@ -1,13 +1,13 @@
 {
-  "name": "CGDI",
-  "version": "0.0.5",
+  "name": "cgdi",
+  "version": "0.0.6",
   "description": "Application to calculate duration between 2 dates (Electron app)",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . CGDi --platform=win32 arch=x64 --overwrite"
+    "build": "electron-packager . CGDI --platform=win32 arch=x64 --overwrite"
   },
-  "repository": "",
+  "repository": "https://github.com/skymloder1/CGDI",
   "keywords": [
     "electron-app",
     "electron",
@@ -21,10 +21,10 @@
   "author": "Gabriel D. Hidalgo",
   "license": "GNU GPLv3",
   "devDependencies": {
-    "electron": "^4.0.0",
+    "electron": "^4.0.7",
     "electron-package": "^0.1.0"
   },
   "dependencies": {
-    "electron-packager": "^12.2.0"
+    "electron-packager": "^13.1.1"
   }
 }

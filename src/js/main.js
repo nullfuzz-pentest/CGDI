@@ -26,6 +26,9 @@ const msgfooter = (`© ${yearcopyright} ${autor} ${licenseGPL}`);
     calcular.onclick = function () {
       var now = (date1.value + ` ` + time1.value + `:00`);
       var then = (date2.value + ` ` + time2.value + `:00`);
+      var viewNow= (date1.value + ` ` + time1.value +` hs`);
+      var viewThen= (date2.value + ` ` + time2.value +` hs`);
+
       var diff = moment.duration(moment(then).diff(moment(now)));
       var days = parseInt(diff.asDays());
       var hours = parseInt(diff.asHours());
@@ -35,17 +38,17 @@ const msgfooter = (`© ${yearcopyright} ${autor} ${licenseGPL}`);
       var validator = negativefix(diff)
       if (validator == false) {
         if (days <= 0 && hours > 0) {
-          let salida = `Duracion del incidente:  ${hours} Hs ${minutes} Min`;
+          let salida =`\n Fecha y Hora de Inicio del Incidente: ${viewNow} \n Fecha y Hora de Solución del Incidente: ${viewThen}  \n Duración del incidente:  ${days} Dias ${hours} Hs  ${minutes} Min`;
           diferencia.value = (salida);
         } else if (hours <= 0 && days <= 0) {
-           let  salida= `Duracion del incidente:  ${minutes} Min`;
+           let  salida= `\n Fecha y Hora de Inicio del Incidente: ${viewNow} \n Fecha y Hora de Solución del Incidente: ${viewThen} \n Duración del incidente:  ${days} Dias ${hours} Hs  ${minutes} Min`;
            diferencia.value = (salida);
         } else {
           if (days>1){
-            let  salida = `Duración del incidente:  ${days} Dias ${hours} Hs  ${minutes} Min`;
+            let  salida = `\n Fecha y Hora de Inicio del Incidente: ${viewNow} \n Fecha y Hora de Solución del Incidente: ${viewThen} \n Duración del incidente:  ${days} Dias ${hours} Hs  ${minutes} Min`;
             diferencia.value = (salida);
           } else{
-              let salida = `Duración del incidente: ${days} Dia ${hours} Hs  ${minutes} Min`;
+              let salida = `\n Fecha y Hora de Inicio del Incidente: ${viewNow} \n Fecha y Hora de Solución del Incidente: ${viewThen} \n Duración del incidente:  ${days} Dias ${hours} Hs  ${minutes} Min`;
               diferencia.value = (salida);
           }
         }

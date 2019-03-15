@@ -1,8 +1,5 @@
 // Modules to control application life and create native browser window
-const {
-  app,
-  BrowserWindow
-} = require('electron')
+const {app,BrowserWindow} = require('electron')
 const url = require('url')
 const path = require('path')
 
@@ -16,7 +13,7 @@ function createWindow() {
     width: 500,
     height: 400,
     backgroundColor: '#323232',
-    title: 'CGDI 0.0.6',
+    title: 'CGDI 0.0.7',
     center: true,
     resizable: true,
     webPreferences: {

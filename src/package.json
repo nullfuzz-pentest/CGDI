@@ -1,6 +1,6 @@
 {
   "name": "cgdi",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Application to calculate duration between 2 dates (Electron app)",
   "main": "main.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "CSS"
   ],
   "author": "Gabriel D. Hidalgo",
-  "license": "GNU GPLv3",
+  "license": "GPL-2.0-or-later",
   "devDependencies": {
     "electron": "^4.0.8",
     "electron-package": "^0.1.0"

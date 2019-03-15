@@ -1,3 +1,5 @@
+// Variables constantes
+
 const footer = document.getElementById (`footer`);
 const autor = (`Gabriel D. Hidalgo`);
 const yearcopyright = (moment().format(`YYYY`));
@@ -14,8 +16,7 @@ const msgfooter = (`© ${yearcopyright} ${autor} ${licenseGPL}`);
     date1.value = (seteo); // setea valor de fecha actual en value del input id date1
     date2.value = (seteo); // setea valor de fecha actual en value del input id date2
     
-    /// Patch fix negative diff in value duration 
-
+    /// Patch fix negative diff in value duration && set MSGError 
     function negativefix(x) {
       if (x < 0) {
         let MsgError = `Ingreso una fecha no valida`;
@@ -24,31 +25,35 @@ const msgfooter = (`© ${yearcopyright} ${autor} ${licenseGPL}`);
         return false;
       }
     }
+    
+    // event onclick en boton Calcular 
+
     calcular.onclick = function () {
       var now = (date1.value + ` ` + time1.value + `:00`);
       var then = (date2.value + ` ` + time2.value + `:00`);
-      var viewNow= (date1.value + ` ` + time1.value +` hs`);
-      var viewThen= (date2.value + ` ` + time2.value +` hs`);
+      var viewNow= (date1.value + ` ` + time1.value +` Hs`);
+      var viewThen= (date2.value + ` ` + time2.value +` Hs`);
+      var msg =`\n Fecha y Hora de Inicio del Incidente: ${viewNow} \n Fecha y Hora de Solución del Incidente: ${viewThen}`;
       var diff = moment.duration(moment(then).diff(moment(now)));
       var days = parseInt(diff.asDays());
       var hours = parseInt(diff.asHours());
       hours = hours - days * 24;
       var minutes = parseInt(diff.asMinutes());
       minutes = minutes - (days * 24 * 60 + hours * 60);
-      var validator = negativefix(diff)
+      var validator = negativefix(diff) // validador con function  negative fix  
       if (validator == false) {
         if (days <= 0 && hours > 0) {
-          let salida =`\n Fecha y Hora de Inicio del Incidente: ${viewNow} \n Fecha y Hora de Solución del Incidente: ${viewThen}  \n Duración del incidente:  ${days} Dias ${hours} Hs  ${minutes} Min`;
+          let salida =` ${msg}   \n Duración del incidente:  ${days} Dias ${hours} Hs  ${minutes} Min`;
           difference.value = (salida);
         } else if (hours <= 0 && days <= 0) {
-           let  salida= `\n Fecha y Hora de Inicio del Incidente: ${viewNow} \n Fecha y Hora de Solución del Incidente: ${viewThen} \n Duración del incidente:  ${days} Dias ${hours} Hs  ${minutes} Min`;
+           let  salida= `${msg} \n Duración del incidente:  ${days} Dias ${hours} Hs  ${minutes} Min`;
            difference.value = (salida);
         } else {
           if (days>1){
-            let  salida = `\n Fecha y Hora de Inicio del Incidente: ${viewNow} \n Fecha y Hora de Solución del Incidente: ${viewThen} \n Duración del incidente:  ${days} Dias ${hours} Hs  ${minutes} Min`;
+            let  salida = `${msg} \n Duración del incidente:  ${days} Dias ${hours} Hs  ${minutes} Min`;
             difference.value = (salida);
           } else{
-              let salida = `\n Fecha y Hora de Inicio del Incidente: ${viewNow} \n Fecha y Hora de Solución del Incidente: ${viewThen} \n Duración del incidente:  ${days} Dias ${hours} Hs  ${minutes} Min`;
+              let salida = `${msg} \n Duración del incidente:  ${days} Dias ${hours} Hs  ${minutes} Min`;
               difference.value = (salida);
           }
         }

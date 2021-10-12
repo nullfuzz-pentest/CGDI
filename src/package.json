@@ -21,7 +21,7 @@
   "author": "Gabriel D. Hidalgo",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
-    "electron": "^9.4.0",
+    "electron": "^11.5.0",
     "electron-package": "^0.1.0"
   },
   "dependencies": {

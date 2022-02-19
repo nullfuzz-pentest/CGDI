@@ -17,6 +17,8 @@ function createWindow() {
     center: true,
     resizable: true,
     webPreferences: {
+      nodeIntegration: false, // Security fix Dom Access to node APis
+      contextIntegration: true, // Security fix XSS vulnerability
       nodeIntegrationInWorker: true,
       textAreasAreResizable: false,
       webgl: true,

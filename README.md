@@ -1,4 +1,4 @@
-###  CGDI
+<h1 aling=center>CGDI<h1>
  Application to calculate duration between 2 dates (Electron app)
  
 <b>New Release 0.07!</b>
